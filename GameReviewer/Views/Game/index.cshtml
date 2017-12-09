@@ -1,0 +1,22 @@
+﻿@model List<GameReviewer.Models.Game>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Game Reviewer app</title>
+    <hr/>
+    <ul>
+    @foreach(var game in Model)
+    {
+        <li>@game.Name</li>
+    }
+    </ul>
+</head>
+<body>
+    <div>
+        <h1>Game reviewer</h1>
+    </div>
+</body>
+</html>
