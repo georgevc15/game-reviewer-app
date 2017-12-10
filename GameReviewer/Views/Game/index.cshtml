@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width" />
     <title>Game Reviewer app</title>
     <hr/>
+    <a asp-action="Create" asp-controller="Game">Add Game to List</a>
     <ul>
-    @foreach(var game in Model)
-    {
-        <li>@game.Name</li>
-    }
+        @foreach(var game in Model)
+        {
+            <li>@game.Name</li>
+        }
     </ul>
 </head>
 <body>

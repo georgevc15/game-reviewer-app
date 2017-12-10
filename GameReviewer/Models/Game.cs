@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Threading.Tasks;
 
 namespace GameReviewer.Models
 {
@@ -9,6 +10,8 @@ namespace GameReviewer.Models
     {
         public string Name { get; set; }
         public string Description { get; set; }
+
+        public List<Review> Reviews { get; set; }
 
         public static void Create(Game game)
         {
