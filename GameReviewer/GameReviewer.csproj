@@ -168,10 +168,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Game\index.cshtml" />
     <Content Include="Views\Game\Create.cshtml" />
+    <Content Include="Views\Review\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Review\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

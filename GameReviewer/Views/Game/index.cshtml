@@ -11,7 +11,7 @@
     <ul>
         @foreach(var game in Model)
         {
-            <li>@game.Name</li>
+            <li>@game.Name (@game.Rating) <a asp-action="Create" asp-controller="Review" asp-route-gamename="@game.Name">Add Review</a></li>
         }
     </ul>
 </head>

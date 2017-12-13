@@ -11,7 +11,17 @@ namespace GameReviewer.Models
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public List<Review> Reviews { get; set; }
+        public double Rating {
+            get
+            {
+                if (Reviews.Any())
+                    return Reviews.Average(e => e.Rating);
+                else
+                    return 0;
+            }
+        }
+
+        public List<Review> Reviews { get; set; } = new List<Review>();
 
         public static void Create(Game game)
         {
@@ -31,6 +41,11 @@ namespace GameReviewer.Models
                     return game;
             }
             return null;
+        }
+
+        public void AddGameReviewToGame(Review review)
+        {
+            Reviews.Add(review);
         }
     }
 }
